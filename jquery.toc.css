@@ -1,0 +1,85 @@
+/* TOC styles */
+.toc {
+	font-size: 1.2em;
+	line-height: 1.4em;
+}
+
+.toc ul {
+	font-size: 0.8em;
+	line-height: 1em;
+}
+.toc ul ul {
+	font-size: inherit;
+	line-height: inherit;
+}
+
+.toc,
+.toc ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.toc ul {
+	padding-left: 20px;
+}
+
+.toc-num {
+	margin-right: 20px;
+}
+
+.toc a {
+	text-decoration: none;
+}
+
+.toc-float-left,
+.toc-float-right {
+	display: inline-block;
+	max-width: 50%;
+	background: #fff;
+	padding: 20px;
+ }
+
+.toc-lined a {
+	display: block;
+	border-bottom: 1px dotted #ccc;
+}
+
+.toc-float-left {
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+.toc-float-right {
+	float: right;
+	margin: 0 0 20px 20px;
+}
+
+
+.toc-bar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	background: #505050;
+	text-align: center;
+}
+.toc-bar ul,
+.toc-bar .toc-num {
+	display: none;
+}
+.toc-bar li {
+	display: inline-block;
+	margin: 0 10px;
+}
+.toc-bar a {
+	color: white;
+}
+
+@media print {
+	.toc-bar {
+		display: none;
+	}
+}
