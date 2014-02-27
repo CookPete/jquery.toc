@@ -109,9 +109,6 @@
 			numerateHeadings(headings);
 		}
 
-		// window.headings = headings;
-		// console.log(headings);
-
 		// Build TOC
 		$ul = $(options.toc);
 
